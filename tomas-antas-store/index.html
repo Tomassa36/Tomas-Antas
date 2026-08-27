@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TOMAS ANTAS | Fashion Store</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+            TOMAS <span>ANTAS</span>
+        </div>
+
+        <nav>
+            <a href="#home">Início</a>
+            <a href="#shop">Shop</a>
+            <a href="#about">Sobre</a>
+            <a href="#contact">Contacto</a>
+        </nav>
+
+        <button class="cart-button" onclick="toggleCart()">
+            🛍️
+            <span id="cart-count">0</span>
+        </button>
+
+    </header>
+
+
+    <!-- HERO -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-text">
+
+            <p class="new-drop">NEW COLLECTION</p>
+
+            <h1>
+                Veste a tua 
+                <span>confiança 💗.</span>
+            </h1>
+
+            <p class="hero-description">
+                Descobre as últimas tendências de moda feminina.
+                Looks modernos, elegantes e feitos para te destacares.
+            </p>
+
+            <a href="#shop" class="shop-button">
+                COMPRAR
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1000&q=80"
+                 alt="Fashion Woman">
+        </div>
+
+    </section>
+
+
+    <!-- CATEGORY -->
+
+    <section class="categories">
+
+        <div class="category">
+            <h3>NEW IN</h3>
+            <p>As últimas tendências</p>
+        </div>
+
+        <div class="category pink-category">
+            <h3>BEST SELLERS</h3>
+            <p>Os favoritos da coleção</p>
+        </div>
+
+        <div class="category">
+            <h3>EXCLUSIVE</h3>
+            <p>Peças para te destacares</p>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+
+    <section class="products-section" id="shop">
+
+        <div class="section-title">
+            <p>THE COLLECTION</p>
+            <h2>Trending Now</h2>
+        </div>
+
+        <div class="products">
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=800&q=80"
+                         alt="Pink Blazer">
+                </div>
+
+                <div class="product-info">
+                    <h3>Pink Blazer</h3>
+                    <p class="price">€49.99</p>
+
+<button onclick="addToCart('Pink Blazer', 49.99)">
+                        ADD TO BAG
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?auto=format&fit=crop&w=800&q=80"
+                         alt="Summer Dress">
+                </div>
+
+                <div class="product-info">
+                    <h3>Summer Dress</h3>
+                    <p class="price">€39.99</p>
+
+                    <button onclick="addToCart('Summer Dress', 39.99)">
+                        ADD TO BAG
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=800&q=80"
+                         alt="Oversized Jacket">
+                </div>
+
+                <div class="product-info">
+                    <h3>Oversized Jacket</h3>
+                    <p class="price">€59.99</p>
+
+                    <button onclick="addToCart('Oversized Jacket', 59.99)">
+                        ADD TO BAG
+                    </button>
+                </div>
+
+            </div>
+
+
+            <div class="product-card">
+
+                <div class="product-image">
+                    <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=800&q=80"
+                         alt="Classic Top">
+                </div>
+
+                <div class="product-info">
+                    <h3>Classic Top</h3>
+                    <p class="price">€24.99</p>
+
+                    <button onclick="addToCart('Classic Top', 24.99)">
+                        ADD TO BAG
+                    </button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?auto=format&fit=crop&w=1000&q=80"
+                 alt="Fashion">
+        </div>
+
+        <div class="about-text">
+
+            <p>SOBRE NÓS</p>
+
+            <h2>Fashion made to stand out.</h2>
+
+            <p>
+                A TOMAS ANTAS nasceu para criar uma experiência de moda
+                moderna, divertida e cheia de personalidade.
+            </p>
+
+            <p>
+                Selecionamos tendências e estilos para mulheres que gostam
+                de expressar quem são através daquilo que vestem.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter">
+
+        <h2>Join the pink side 💗</h2>
+
+        <p>
+            Recebe novidades, novos drops e ofertas exclusivas.
+        </p>
+
+        <div class="newsletter-form">
+
+            <input
+                type="email"
+                placeholder="O teu email..."
+            >
+
+            <button>
+                SUBSCRIBE
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <div class="footer-logo">
+            TOMAS <span>ANTAS</span>
+        </div>
+
+        <p>
+            © 2026 TOMAS ANTAS — Fashion Store
+        </p>
+
+        <div class="socials">
+            <span>Instagram</span>
+            <span>TikTok</span>
+            <span>Email</span>
+        </div>
+
+    </footer>
+
+
+    <!-- CART SIDEBAR -->
+
+    <div class="cart-sidebar" id="cart">
+
+        <div class="cart-header">
+
+            <h2>Your Bag 🛍️</h2>
+
+            <button onclick="toggleCart()">
+                ✕
+            </button>
+
+        </div>
+
+
+        <div id="cart-items">
+            <p class="empty-cart">
+                O teu carrinho está vazio.
+            </p>
+        </div>
+
+
+        <div class="cart-footer">
+
+            <h3>
+                Total:
+                <span id="cart-total">€0.00</span>
+            </h3>
+
+            <button class="checkout-button" onclick="goToCheckout()">
+    CHECKOUT
+</button>
+
+        </div>
+
+    </div>
+
+<!-- CHECKOUT PAGE -->
+
+<div class="checkout-page" id="checkout-page">
+
+    <div class="checkout-top">
+
+        <h1>TOMAS <span>ANTAS</span></h1>
+
+        <button onclick="closeCheckout()">← Voltar à loja</button>
+
+    </div>
+
+
+    <div class="checkout-container">
+
+        <!-- FORMULÁRIO -->
+
+        <div class="checkout-form">
+
+            <h2>Checkout</h2>
+
+            <h3>Informações pessoais</h3>
+
+            <input type="text" id="customer-name" placeholder="Nome completo" required>
+
+           <input type="email" id="customer-email" placeholder="Email" required>
+
+           <input type="tel" id="customer-phone" placeholder="Número de telefone">
+
+
+            <h3>Morada de entrega</h3>
+
+            <input type="text" id="customer-address" placeholder="Morada" required>
+
+            <div class="two-inputs">
+
+                <input type="text" id="customer-city" placeholder="Cidade" required>
+
+                <input type="text" id="customer-postal-code" placeholder="Código Postal" required>
+
+            </div>
+
+            <select id="customer-country">
+                <option>Portugal</option>
+                <option>Espanha</option>
+                <option>França</option>
+                <option>Outro</option>
+            </select>
+
+
+            <h3>Método de pagamento</h3>
+
+            <div class="payment-options">
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="card" checked>
+                    💳 Cartão Bancário
+                </label>
+
+                <label class="payment-option">
+                    <input type="radio" name="payment" value="mbway">
+                    📱 MB WAY
+                </label>
+
+      <label class="payment-option">
+    <input type="radio" name="payment" value="paypal">
+
+    <img
+        src="https://www.paypalobjects.com/webstatic/icon/pp258.png"
+        alt="PayPal"
+        class="paypal-logo"
+    >
+
+    <span>PayPal</span>
+</label>
+
+            </div>
+
+
+            <button type="button" class="finish-order" onclick="finishOrder()">
+    FINALIZAR ENCOMENDA
+</button>
+
+        </div>
+
+
+        <!-- RESUMO DA ENCOMENDA -->
+
+        <div class="order-summary">
+
+            <h2>A tua encomenda 🛍️</h2>
+
+            <div id="checkout-items"></div>
+
+            <div class="checkout-total">
+
+                <p>
+                    Subtotal
+                    <span id="checkout-subtotal">€0.00</span>
+                </p>
+
+                <p>
+                    Entrega
+                    <span>Grátis</span>
+                </p>
+
+                <hr>
+
+                <h3>
+                    Total
+                    <span id="checkout-total">€0.00</span>
+                </h3>
+
+            </div>
+
+        </div>
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
