@@ -245,11 +245,12 @@ async function finishOrder() {
         );
 
         const result = await response.json();
-
+alert(JSON.stringify(result));
         if (!response.ok) {
             throw new Error(result.error || "Erro ao criar pagamento.");
         }
 
+       alert(result.url);
         window.location.href = result.url;
 
     } catch (error) {
