@@ -1071,3 +1071,114 @@ footer p {
     vertical-align: middle;
     margin-right: 5px;
 }
+/* ===============================
+ESCOLHA DE TAMANHO
+================================ */
+
+.size-selection {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.45);
+
+
+display: flex;
+align-items: center;
+justify-content: center;
+
+z-index: 9999;
+
+
+}
+
+.size-selection-content {
+background: white;
+width: 90%;
+max-width: 420px;
+
+
+padding: 35px;
+
+border-radius: 20px;
+
+text-align: center;
+
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+
+
+}
+
+.size-selection-content h3 {
+font-family: "Playfair Display", serif;
+font-size: 26px;
+margin-bottom: 25px;
+}
+
+.size-options {
+display: flex;
+justify-content: center;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.size-options button {
+width: 55px;
+height: 50px;
+
+
+border: 1px solid #ddd;
+background: white;
+
+border-radius: 10px;
+
+font-family: "Montserrat", sans-serif;
+font-weight: 600;
+
+cursor: pointer;
+
+transition: 0.2s;
+
+
+}
+
+.size-options button:hover {
+background: #ff5fa2;
+color: white;
+border-color: #ff5fa2;
+
+
+transform: translateY(-2px);
+
+
+}
+
+.close-size {
+margin-top: 25px;
+
+
+background: transparent;
+border: none;
+
+color: #888;
+
+font-family: "Montserrat", sans-serif;
+
+cursor: pointer;
+
+
+}
+
+.close-size:hover {
+color: #ff5fa2;
+}
+
+/* Tamanho no checkout */
+
+.checkout-item small {
+display: block;
+margin-top: 5px;
+color: #888;
+font-size: 12px;
+}
